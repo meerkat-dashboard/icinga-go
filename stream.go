@@ -31,7 +31,8 @@ type Event struct {
 // Any errors on initialising the connection are returned immediately as a value.
 // Subsequent errors reading the stream are set in the Error field of sent Events.
 // Callers should handle both cases and resubscribe as required.
-func (c *Client) Subscribe(typ, queue, filter string) (<-chan Event, error) {
+
+func (c *Client) Subscribe(typ []string, queue, filter string) (<-chan Event, error) {
 	m := map[string]interface{}{
 		"types":  typ,
 		"queue":  queue,
