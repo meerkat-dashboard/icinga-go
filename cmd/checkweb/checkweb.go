@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"path"
 
-	"olowe.co/icinga"
+	"github.com/meerkat-dashboard/icinga-go"
 )
 
 type server struct {

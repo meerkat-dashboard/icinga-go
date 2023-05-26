@@ -3,7 +3,7 @@ packages:
   - go
   - icinga2
 sources:
-  - https://git.sr.ht/~otl/icinga
+  - https://github.com/meerkat-dashboard/icinga-go
 tasks:
   - icinga_setup: |
       doas icinga2 api setup

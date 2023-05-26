@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"olowe.co/icinga"
+	"github.com/meerkat-dashboard/icinga-go"
 )
 
 func init() {

@@ -33,7 +33,7 @@ type Event struct {
 // Callers should handle both cases and resubscribe as required.
 func (c *Client) Subscribe(typ, queue, filter string) (<-chan Event, error) {
 	m := map[string]interface{}{
-		"types":  []string{typ},
+		"types":  typ,
 		"queue":  queue,
 		"filter": filter,
 	}
